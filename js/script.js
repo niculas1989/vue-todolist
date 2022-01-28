@@ -44,6 +44,9 @@ const root = new Vue({
         },
         addNewListElement() {
             const listElement = this.newListElement.trim();
+            if (listElement) {
+                this.listElements.push({ text: listElement, done: false });
+            }
         },
     }
 });
