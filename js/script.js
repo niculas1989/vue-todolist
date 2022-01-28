@@ -42,5 +42,8 @@ const root = new Vue({
                 else return true;
             })
         },
+        addNewListElement() {
+            const listElement = this.newListElement.trim();
+        },
     }
 });
