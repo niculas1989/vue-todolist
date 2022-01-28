@@ -47,6 +47,7 @@ const root = new Vue({
             if (listElement) {
                 this.listElements.push({ text: listElement, done: false });
             }
+            this.newListElement = '';
         },
     }
 });
