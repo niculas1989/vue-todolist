@@ -27,16 +27,17 @@
     <main>
         <div id="root">
             <div class="container">
-                <ul class="list-group w-50 mx-auto">
+                <ul v-if="listElements.length" class="list-group w-50 mx-auto">
                     <!-- Creo un ciclo in cui aggiungere "tot" volte questi LI -->
                     <!-- Pensare anche a creare un IF -->
-                    <h3>Bravissimo, hai fatto tutto, puoi andare a dormire!</h3>
                     <li v-for="(listElement, index) in listElements"
                         class="list-group-item d-flex justify-content-between">{{ listElement.text }}
                         <button type="button" class="btn-close" aria-label="Close"
                             @click="listElementDelete(index)"></button>
                     </li>
+
                 </ul>
+                <h3 v-else class="text-center">Bravissimo, hai fatto tutto, puoi andare a dormire!</h3>
             </div>
         </div>
     </main>
