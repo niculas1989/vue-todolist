@@ -28,7 +28,10 @@
             <div class="container">
                 <ul class="list-group w-50 mx-auto">
                     <!-- Creo un ciclo in cui aggiungere "tot" volte questi LI -->
-                    <li v-for="(listElement, index) in listElements" class="list-group-item">{{ listElement.text }}</li>
+                    <li v-for="(listElement, index) in listElements"
+                        class="list-group-item d-flex justify-content-between">{{ listElement.text }}
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </li>
                 </ul>
             </div>
         </div>
