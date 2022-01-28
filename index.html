@@ -28,7 +28,7 @@
         <div id="root">
             <div class="container ">
                 <div class="input-group mb-3 w-50 mx-auto">
-                    <input type="text" class="form-control" v-model="newListElement">
+                    <input type="text" class="form-control" v-model="newListElement" @keyup.enter="addNewListElement">
                     <button class="btn btn-outline-primary" type="button" @click="addNewListElement">Aggiungi</button>
                 </div>
                 <ul v-if="listElements.length" class="list-group w-50 mx-auto">
