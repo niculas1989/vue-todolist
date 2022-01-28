@@ -35,6 +35,8 @@ const root = new Vue({
         ]
     },
     methods: {
+        listElementDelete() {
 
+        },
     }
 });
