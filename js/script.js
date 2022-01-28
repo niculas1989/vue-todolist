@@ -35,7 +35,7 @@ const root = new Vue({
         ]
     },
     methods: {
-        listElementDelete() {
+        listElementDelete(index) {
             const newListElement = this.listElements.filter(() => {
 
             })
