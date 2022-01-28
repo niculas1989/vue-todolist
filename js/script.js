@@ -7,7 +7,14 @@ Vue.config.devtools = true;
 const root = new Vue({
     el: '#root',
     data: {
-
+        toDo: [
+            { text: '', done: false },
+            { text: '', done: false },
+            { text: '', done: false },
+            { text: '', done: false },
+            { text: '', done: false },
+            { text: '', done: false },
+        ]
     },
     methods: {
 
