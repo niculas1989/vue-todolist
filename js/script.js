@@ -32,7 +32,8 @@ const root = new Vue({
             { text: 'Prendere appunti', done: false },
             { text: 'Fare le esercitazioni pomeridiane', done: false },
             { text: 'Svagarsi dopo', done: false },
-        ]
+        ],
+        newListElement: '',
     },
     methods: {
         listElementDelete(index) {
