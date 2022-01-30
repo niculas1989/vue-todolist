@@ -49,5 +49,10 @@ const root = new Vue({
             }
             this.newListElement = '';
         },
+        check(index) {
+            //this.listElements[index].done = !this.listElements[index].done;
+
+
+        }
     }
 });

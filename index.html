@@ -39,9 +39,9 @@
                     <!-- Pensare anche a creare un IF -->
                     <li v-for="(listElement, index) in listElements"
                         class="list-group-item d-flex justify-content-between">
-                        <div>
-                            <span>
-                                <i class="far fa-square"></i>
+                        <div @click="check(index)" role="button" class="flex-grow-1">
+                            <i class="far me-2" :class="listElement.done ? 'fa-check-square' : 'fa-square'"></i>
+                            <span :class="{done: listElement.done}">
                                 {{listElement.text }}
                             </span>
                         </div>
