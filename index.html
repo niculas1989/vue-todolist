@@ -41,7 +41,7 @@
                         class="list-group-item d-flex justify-content-between">
                         <div @click="check(index)" role="button" class="flex-grow-1">
                             <i class="far me-2" :class="listElement.done ? 'fa-check-square' : 'fa-square'"></i>
-                            <span :class="{done: listElement.done}">
+                            <span :class="{checked: listElement.done}">
                                 {{listElement.text }}
                             </span>
                         </div>
