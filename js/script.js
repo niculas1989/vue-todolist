@@ -52,6 +52,11 @@ const root = new Vue({
         check(index) {
             //this.listElements[index].done = !this.listElements[index].done;
 
+            const updateListElement = this.listElements.map((listELement, i) => {
+                if (i === index) listELement.done = !listELement.done;
+                return listELement;
+
+            });
 
         }
     }
